@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <title>BETTERCALLSAUL.COM</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -96,92 +96,114 @@
 
     </div>
     <script>
-    function cambiarContenido(seccion) {
+        function cambiarContenido(seccion) {
 
-        const contenido = document.getElementById("contenido-central");
+            const contenido = document.getElementById("contenido-central");
 
-        if (seccion === "home") {
-            contenido.innerHTML = `
-                <h2>HOME</h2>
+            if (seccion === "home") {
+                contenido.innerHTML = `
+                    <h2>HOME</h2>
 
-                <h3>Accused? Confused? Better Call Saul!</h3>
+                    <h3>Accused? Confused? Better Call Saul!</h3>
 
-                <p>Welcome to the official website of Saul Goodman, Albuquerque’s most reliable criminal defense attorney. 
-                When the law is against you, I’m on your side.</p>
+                    <p>Welcome to the official website of Saul Goodman, Albuquerque’s most reliable criminal defense attorney. 
+                    When the law is against you, I’m on your side.</p>
 
-                <p>No case is too big. No case is too small. 
-                If you’re in trouble, don’t wait — call Saul.</p>
+                    <p>No case is too big. No case is too small. 
+                    If you’re in trouble, don’t wait — call Saul.</p>
 
-                <button>GET OUT OF TROBLE NOW</button>
-            `;
-        }
+                    <button>GET OUT OF TROBLE NOW</button>
+                `;
+            }
 
-        if (seccion === "services") {
-            contenido.innerHTML = `
-                <h2>SERVICES</h2>
+            if (seccion === "services") {
+                contenido.innerHTML = `
+                    <h2>SERVICES</h2>
 
-                <h3>Criminal Defense</h3>
-                <ul>
-                <li>DUI & Traffic Offenses</li>
-                <li>Drug Charges</li>
-                <li>Fraud & Financial Crimes</li>
-                <li>Assault & Violent Crimes</li>
-                </ul>
+                    <h3>Criminal Defense</h3>
+                    <ul>
+                    <li>DUI & Traffic Offenses</li>
+                    <li>Drug Charges</li>
+                    <li>Fraud & Financial Crimes</li>
+                    <li>Assault & Violent Crimes</li>
+                    </ul>
 
-                <h3>Legal Consulting</h3>
-                <ul>
-                <li>Business Legal Advice</li>
-                <li>Contract Negotiation</li>
-                <li>Confidential Representation</li>
-                </ul>
+                    <h3>Legal Consulting</h3>
+                    <ul>
+                    <li>Business Legal Advice</li>
+                    <li>Contract Negotiation</li>
+                    <li>Confidential Representation</li>
+                    </ul>
 
-                <h3>Emergency Legal Help</h3>
-                <p>Arrested? Police questioning you? 
-                Do not speak without your attorney. Call immediately.</p>
+                    <h3>Emergency Legal Help</h3>
+                    <p>Arrested? Police questioning you? 
+                    Do not speak without your attorney. Call immediately.</p>
 
-            `;
-        }
+                `;
+            }
 
-        if (seccion === "about") {
-            contenido.innerHTML = `
-                <h2>ABOUT ME</h2>
+            if (seccion === "about") {
+                contenido.innerHTML = `
+                    <h2>ABOUT ME</h2>
 
-                <p>My name is Saul Goodman. Attorney at Law. When you're in trouble, I’m the guy you call.</p>
+                    <p>My name is Saul Goodman. Attorney at Law. When you're in trouble, I’m the guy you call.</p>
 
-                <h3>Who I Am</h3>
-                <p>Graduate of the University of American Samoa School of Law (Go Land Crabs!). 
-                Based in Albuquerque, New Mexico, I specialize in criminal defense and complex legal situations. 
-                If you're in a tight spot, I know how to get you out.</p>
+                    <h3>Who I Am</h3>
+                    <p>Graduate of the University of American Samoa School of Law (Go Land Crabs!). 
+                    Based in Albuquerque, New Mexico, I specialize in criminal defense and complex legal situations. 
+                    If you're in a tight spot, I know how to get you out.</p>
 
-                <h3>My Philosophy</h3>
-                <p>Everyone deserves a second chance. The law is complicated — I make it simple. 
-                I fight for the little guy and I never judge my clients.</p>
+                    <h3>My Philosophy</h3>
+                    <p>Everyone deserves a second chance. The law is complicated — I make it simple. 
+                    I fight for the little guy and I never judge my clients.</p>
 
-                <h3>Why Choose Me?</h3>
-                <ul>
-                <li>✔ Fast results</li>
-                <li>✔ Available 24/7</li>
-                <li>✔ Free first consultation</li>
-                <li>✔ Aggressive courtroom strategy</li>
-                <li>✔ Total discretion guaranteed</li>
-                </ul>
+                    <h3>Why Choose Me?</h3>
+                    <ul>
+                    <li>✔ Fast results</li>
+                    <li>✔ Available 24/7</li>
+                    <li>✔ Free first consultation</li>
+                    <li>✔ Aggressive courtroom strategy</li>
+                    <li>✔ Total discretion guaranteed</li>
+                    </ul>
 
-            `;
-        }
+                `;
+            }
 
-        if (seccion === "contact") {
-            contenido.innerHTML = `
-                <h2>CONTACT</h2>
+            if (seccion === "contact") {
+                contenido.innerHTML = `
+                    <h2>CONTACT</h2>
 
-                <p><strong>Phone:</strong> (505) 842-5662</p>
-                <p><strong>Email:</strong> saulgoodman@lawyer.com</p>
-                <p><strong>Office:</strong> Albuquerque, New Mexico</p>
-                <p><strong>Hours:</strong> 24/7 Emergency Service</p>
+                    <p><strong>Phone:</strong> (505) 842-5662</p>
+                    <p><strong>Email:</strong> saulgoodman@lawyer.com</p>
+                    <p><strong>Office:</strong> Albuquerque, New Mexico</p>
+                    <p><strong>Hours:</strong> 24/7 Emergency Service</p>
 
-                <p>The longer you wait, the worse it gets. Call now.</p>
-            `;
-        }
+                    <p>The longer you wait, the worse it gets. Call now.</p>
+                `;
+            }
+            
+            
+            function cambiarContenido(seccion) {
+
+                const contenido = document.getElementById("contenido-central");
+
+                if (seccion === "home") {
+                    contenido.innerHTML = `
+                        <h2>HOME</h2>
+                        <h3>Accused? Confused? Better Call Saul!</h3>
+                        <p>Welcome to the official website of Saul Goodman...</p>
+                    `;
+                }
+
+                // resto de secciones...
     }
+    }
+
+    window.onload = function() {
+        cambiarContenido('home');
+    };
+
+        
     </script>
 
 </body>

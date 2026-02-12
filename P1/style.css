@@ -16,7 +16,7 @@ body {
 
 
 }
-
+/*
 @media (max-width: 768px) {
 
     .zona-central {
@@ -47,7 +47,7 @@ body {
         width: 95%;
     }
 }
-
+*/
 .letras-izquierda,
 .letras-derecha {
     position: absolute;
