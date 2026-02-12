@@ -12,6 +12,12 @@ padding: 10px;
 min-height: 500px;
 }
 
+body {
+background-image: url('photo-1593005510329-8a4035a7238f.avif');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
 .izquierda {
 width: 25%;
 }
