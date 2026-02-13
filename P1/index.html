@@ -5,6 +5,8 @@
     <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <title>BETTERCALLSAUL.COM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="260e.png">
+
 </head>
 
 <body>
@@ -93,12 +95,23 @@
             </div>
 
         </div>
+        <div class="seccion-video" id="seccion-video">
+            <video controls muted loop>
+                <source src="ythome.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
 
     </div>
     <script>
         function cambiarContenido(seccion) {
 
             const contenido = document.getElementById("contenido-central");
+            const video = document.getElementById("seccion-video");
+
+            // Ocultamos el video por defecto
+            video.style.display = "none";
 
             if (seccion === "home") {
                 contenido.innerHTML = `
@@ -112,11 +125,16 @@
                     <p>No case is too big. No case is too small. 
                     If you’re in trouble, don’t wait — call Saul.</p>
 
-                    <button>GET OUT OF TROBLE NOW</button>
+                    <button class="boton-urgente" onclick="cambiarContenido('contact')">
+                        GET OUT OF TROUBLE NOW
+                    </button>
+
+
                 `;
+                video.style.display = "block";
             }
 
-            if (seccion === "services") {
+            else if (seccion === "services") {
                 contenido.innerHTML = `
                     <h2>SERVICES</h2>
 
@@ -140,9 +158,11 @@
                     Do not speak without your attorney. Call immediately.</p>
 
                 `;
+        
             }
 
-            if (seccion === "about") {
+
+            else if (seccion === "about") {
                 contenido.innerHTML = `
                     <h2>ABOUT ME</h2>
 
@@ -168,8 +188,8 @@
 
                 `;
             }
-
-            if (seccion === "contact") {
+            
+            else if (seccion === "contact") {
                 contenido.innerHTML = `
                     <h2>CONTACT</h2>
 
@@ -182,22 +202,10 @@
                 `;
             }
             
+
             
-            function cambiarContenido(seccion) {
-
-                const contenido = document.getElementById("contenido-central");
-
-                if (seccion === "home") {
-                    contenido.innerHTML = `
-                        <h2>HOME</h2>
-                        <h3>Accused? Confused? Better Call Saul!</h3>
-                        <p>Welcome to the official website of Saul Goodman...</p>
-                    `;
-                }
-
-                // resto de secciones...
     }
-    }
+
 
     window.onload = function() {
         cambiarContenido('home');
